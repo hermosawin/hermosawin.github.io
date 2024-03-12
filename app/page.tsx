@@ -53,7 +53,7 @@ export default function Home() {
         words={"Windows Sun valley, the way it should've been"}
         className="text-white font-normal"
       ></TextGenerateEffect>
-      <MacbookScroll src="hermosa/Dark_Desktop.png" />
+      <MacbookScroll src="Dark_Desktop.png" />
     </main>
   );
 }
