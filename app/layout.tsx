@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { FloatingNav } from "@/components/ui/floating-navbar"
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -14,9 +15,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  let items = [
+    {name: "Home", link: "/"},
+    {name:"Meet Hermosa", link: "/about"},
+    {name:"Screenshots", link: "/screenshots"},
+  ]
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className+" dark:bg-dot-white/[0.2]"}>
+        <FloatingNav navItems={items}/>
+        {children}</body>
     </html>
   );
 }
