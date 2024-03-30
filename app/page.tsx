@@ -5,45 +5,6 @@ import Image from "next/image";
 
 import { useState } from "react";
 
-const items = [
-  {
-    title: "Desktop",
-    description: (
-      <Image src="/hermosa.png" width={300} height={300} alt=""></Image>
-    ),
-  },
-  {
-    title: "Desktop (Dark mode)",
-    description: (
-      <Image src="/hermosa.png" width={300} height={300} alt=""></Image>
-    ),
-  },
-  {
-    title: "Desktop",
-    description: (
-      <Image src="/hermosa.png" width={300} height={300} alt=""></Image>
-    ),
-  },
-  {
-    title: "Desktop (Dark mode)",
-    description: (
-      <Image src="/hermosa.png" width={300} height={300} alt=""></Image>
-    ),
-  },
-  {
-    title: "Desktop",
-    description: (
-      <Image src="/hermosa.png" width={300} height={300} alt=""></Image>
-    ),
-  },
-  {
-    title: "Desktop (Dark mode)",
-    description: (
-      <Image src="/hermosa.png" width={300} height={300} alt=""></Image>
-    ),
-  },
-];
-
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center p-24 pt-8">
